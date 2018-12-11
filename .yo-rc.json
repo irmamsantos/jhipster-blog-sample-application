@@ -2,14 +2,14 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "jhipsterBlogSampleApplication",
-    "packageName": "io.github.jhipster.demo.blog",
-    "packageFolder": "io/github/jhipster/demo/blog",
-    "serverPort": 8080,
+    "baseName": "blog",
+    "packageName": "com.jhipster.demo.blog",
+    "packageFolder": "com/jhipster/demo/blog",
+    "serverPort": "8080",
     "serviceDiscoveryType": false,
     "authenticationType": "jwt",
     "uaaBaseName": "../uaa",
-    "cacheProvider": "ehcache",
+    "cacheProvider": "hazelcast",
     "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
@@ -27,16 +27,24 @@
     "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": [
-      "pt-pt",
-      "en"
+      "en",
+      "fr"
     ],
-    "clientFramework": "angularX",
+    "clientFramework": "react",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "5.7.0",
     "jwtSecretKey": "YzJkOTFjMzU4YzM4MDc3YmE3MzcyODYwZjliYTZmYmEzNDc5MGY3ZjgyNzMwODdlYTM3ZWFlNzcxMjMzN2IxMGY1ODZmYzhmMmMxYTI4ZjkzODdhNDE0NDRhYWYyMzgxOTVlZTg4OTI3ZDlkNzZmNmQ4OTZmYTBhM2ZmNTc1ZWE=",
-    "otherModules": []
+    "otherModules": [],
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false
   },
   "git-provider": "GitHub",
   "git-company": "irmamsantos",
-  "repository-name": "jhipster-blog-sample-application"
+  "repository-name": "jhipster-blog-sample-application",
+  "entities": [
+    "Blog",
+    "BlogEntry",
+    "Tag"
+  ]
 }
